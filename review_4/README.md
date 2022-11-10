@@ -23,7 +23,7 @@ raise arg error if input is not a string
 valid operations "+-\*/" if not raise math error
 
 input / output
-"1" = ["1",1]
+"1" = ["1", 1]
 "1 + 1" = ["1 + 1", 2]
 "1 _ 1" = ["1 _ 1", 1]
 "1 + 1 + 1" = ["1 + 1 + 1", 2]
