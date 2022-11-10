@@ -26,6 +26,10 @@ input / output
 "1" = ["1",1]
 "1 + 1" = ["1 + 1", 2]
 "1 _ 1" = ["1 _ 1", 1]
-"1 + 1 _ 1" = ["1 + 1 _ 1", 2]
+"1 + 1 + 1" = ["1 + 1 + 1", 2]
 "1+1" = math error
 "one" = math error
+
+---
+
+Ask about negatives and floating points
