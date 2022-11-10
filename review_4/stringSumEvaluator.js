@@ -3,6 +3,8 @@ const stringSumEvaluator = (inputString) => {
 
   if (splitString.length == 1) return [inputString, parseInt(inputString)];
 
+  console.log(parseInt("one"));
+
   return [
     inputString,
     parseStringCalculation(splitString[0], splitString[1], splitString[2]),
@@ -19,6 +21,8 @@ const parseStringCalculation = (num1Str, operator, num2Str) => {
       return num1 - num2;
     case "*":
       return num1 * num2;
+    case "/":
+      return num1 / num2;
     default:
       break;
   }
