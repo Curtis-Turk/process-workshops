@@ -18,3 +18,6 @@ test("Returns a calcluation of 1 * 1", () => {
 test("Returns a calcluation of 2 * 1", () => {
   expect(stringSumEvaluator("2 * 1")).toEqual(["2 * 1", 2]);
 });
+test("Returns a calcluation of 2 - 1", () => {
+  expect(stringSumEvaluator("2 - 1")).toEqual(["2 - 1", 1]);
+});

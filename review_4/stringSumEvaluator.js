@@ -12,8 +12,16 @@ const stringSumEvaluator = (inputString) => {
 const parseStringCalculation = (num1Str, operator, num2Str) => {
   num1 = parseInt(num1Str);
   num2 = parseInt(num2Str);
-  if (operator == "+") {
-    return num1 + num2;
-  } else return num1 * num2;
+  switch (operator) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    default:
+      break;
+  }
 };
+
 module.exports = stringSumEvaluator;
