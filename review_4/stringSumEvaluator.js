@@ -1,4 +1,4 @@
-const stringSumEvaluator = (inputString) => {
+const evaluateStringSum = (inputString) => {
   splitString = inputString.split(" ");
 
   if (splitString.length == 1) return [inputString, parseInt(inputString)];
@@ -28,4 +28,4 @@ const parseStringCalculation = (num1Str, operator, num2Str) => {
   }
 };
 
-module.exports = stringSumEvaluator;
+module.exports = evaluateStringSum;
