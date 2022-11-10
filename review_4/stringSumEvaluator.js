@@ -1,7 +1,7 @@
 const stringSumEvaluator = (inputString) => {
   splitString = inputString.split(" ");
 
-  if (splitString.length == 1) return [inputString, 1];
+  if (splitString.length == 1) return [inputString, parseInt(inputString)];
   console.log(splitString);
   console.log(parseInt(splitString[2]));
 
