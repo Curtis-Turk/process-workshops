@@ -17,7 +17,11 @@ class Report {
       .length;
   }
 
-  formatReport() {}
+  generate() {
+    console.log(
+      `Test 1:\nGreen: ${this.countScores("Green")}\nAmber: 0\nRed: 0`
+    );
+  }
 }
 
 module.exports = Report;

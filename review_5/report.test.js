@@ -1,6 +1,6 @@
 const Report = require("./report");
 
-describe("class setup", () => {
+describe("Class setup", () => {
   test("should be able to add a score", () => {
     const report = new Report();
     report.addScores("Green");
@@ -36,12 +36,25 @@ describe("Score counter", () => {
   });
 });
 
-// describe("generate scores function", () => {
-//   test("formats report from scores", () => {
-//     const report = new Report();
-//     report.addScores("Green");
-//     expect(report.formatReport()).toEqual(
-//       "Test 1:\nGreen: 1\nAmber: 0\nRed: 0"
-//     );
-//   });
-// });
+describe("Generate scores", () => {
+  test("formats report from scores", () => {
+    const report = new Report();
+    const consoleSpy = jest.spyOn(console, "log");
+    report.addScores("Green");
+    report.generate();
+
+    expect(consoleSpy).toHaveBeenCalledWith(
+      "Test 1:\nGreen: 1\nAmber: 0\nRed: 0"
+    );
+  });
+  test("formats report from scores", () => {
+    const report = new Report();
+    const consoleSpy = jest.spyOn(console, "log");
+    report.addScores("Green, Green");
+    report.generate();
+
+    expect(consoleSpy).toHaveBeenCalledWith(
+      "Test 1:\nGreen: 2\nAmber: 0\nRed: 0"
+    );
+  });
+});
