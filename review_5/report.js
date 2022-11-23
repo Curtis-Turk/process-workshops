@@ -18,8 +18,11 @@ class Report {
   }
 
   generate() {
+    let greenCount = this.countScores("Green");
+    let amberCount = this.countScores("Amber");
+    let redCount = this.countScores("Red");
     console.log(
-      `Test 1:\nGreen: ${this.countScores("Green")}\nAmber: 0\nRed: 0`
+      `Test 1:\nGreen: ${greenCount}\nAmber: ${amberCount}\nRed: ${redCount}`
     );
   }
 }

@@ -1,8 +1,8 @@
-Tests scores
+# Tests scores
 
 Accepts multiple test entries and reports on each
 
-2 mmain functions
+2 main functions
 
 ## 1st part
 

@@ -47,7 +47,7 @@ describe("Generate scores", () => {
       "Test 1:\nGreen: 1\nAmber: 0\nRed: 0"
     );
   });
-  test("formats report from scores", () => {
+  test("formats report from 2 green scores", () => {
     const report = new Report();
     const consoleSpy = jest.spyOn(console, "log");
     report.addScores("Green, Green");
@@ -55,6 +55,16 @@ describe("Generate scores", () => {
 
     expect(consoleSpy).toHaveBeenCalledWith(
       "Test 1:\nGreen: 2\nAmber: 0\nRed: 0"
+    );
+  });
+  test("formats report with red addition", () => {
+    const report = new Report();
+    const consoleSpy = jest.spyOn(console, "log");
+    report.addScores("Green, Green, Red");
+    report.generate();
+
+    expect(consoleSpy).toHaveBeenCalledWith(
+      "Test 1:\nGreen: 2\nAmber: 0\nRed: 1"
     );
   });
 });
