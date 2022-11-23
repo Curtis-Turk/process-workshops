@@ -27,7 +27,7 @@ order of generated scores - start with green, amber then red
 generated scores would contain full range - it can be 0
 do not end with trailing \n and ---
 
-input | output
+## input | output
 
 "Green" | "Test 1:\nGreen: 1\nAmber: 0\nRed: 0"
 "Green, RED" | "Test 1:\nGreen: 1\nAmber: 0\nRed: 1"
